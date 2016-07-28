@@ -8,7 +8,7 @@ WORKINGDIR=`pwd`
 echo Runnning buildscript from directory $WORKINGDIR
 
 cd ./platforms/ios
-mainPListPath=./ecobee3/ecobee3-Info.plist
+mainPListPath=./${PRODUCT_NAME}/${PRODUCT_NAME}-Info.plist
 
 currentBundleVersion=`$PlistBuddy -c "Print :CFBundleVersion" "$mainPListPath"`
 echo current CFBundleVersion: "$currentBundleVersion"
